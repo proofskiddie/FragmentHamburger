@@ -14,11 +14,11 @@
     </string>
     <string name="article_heading">Try Our Fresh Delicious Hamburgers!</string>
     <string name="image_description">article image</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="question_article">Like our food?</string>
     <string name="yes_message">Hamburgers Like You Too!</string>
     <string name="no_message">Try Our Pizza!</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="button_show_fragment">Please Rate Our Food</string>
+    <string name="button_hide_fragment">Thank You!</string>
 </resources>

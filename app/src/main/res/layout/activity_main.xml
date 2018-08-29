@@ -24,14 +24,16 @@
         android:id="@+id/article_image"
         android:layout_width="@dimen/default_image"
         android:layout_height="@dimen/default_image"
-        android:layout_marginTop="@dimen/default_margin_top"
         android:layout_marginLeft="@dimen/default_margin_left"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="@dimen/default_margin_top"
         android:contentDescription="@string/image_description"
-        android:src="@drawable/hamburger" />
+        android:src="@drawable/hamburger"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <ScrollView
+        android:id="@+id/scroll_view"
         android:layout_width="@dimen/zero_dp"
         android:layout_height="@dimen/zero_dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -47,12 +49,12 @@
 
             <TextView
                 android:id="@+id/article_heading"
-                android:textStyle="bold"
-                android:textSize="@dimen/heading"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/default_margin"
-                android:text="@string/article_heading" />
+                android:text="@string/article_heading"
+                android:textSize="@dimen/heading"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -60,4 +62,16 @@
                 android:text="@string/article_text" />
         </LinearLayout>
     </ScrollView>
+
+    <Button
+        android:id="@+id/button_show_fragment"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_height="wrap_content"
+        android:background="@color/my_fragment_color"
+        android:onClick="showFragment"
+        android:padding="@dimen/default_margin"
+        android:text="@string/button_show_fragment"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/scroll_view"
+        app:layout_constraintTop_toBottomOf="@id/article_image" />
 </android.support.constraint.ConstraintLayout>
